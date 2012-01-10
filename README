@@ -1,0 +1,18 @@
+Project Overview
+================
+The goal is to provide an easy to use api for interacting with the iRobot Create. This api
+is designed to be able to be used with arduino libraries currently, however the serial calls
+are abstracted away so anyone can use their own serial library on their own microcontroller
+as long as they modify the correct functions.
+
+ToDo
+===
+- Support sensor streaming.
+- Support reading sensor groups.
+
+Version 0.1
+===========
+- Full input, output, and drive commands through the Create robot.
+- Read all sensor outputs from the robot, one at a time or user created lists of sensors.
+- Simple control of the robot in a loop that drives until an obstical is hit and then 
+  attempts to drive around it by using its bump sensors.
